@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body{
+    background-color: black;
+    color: rgb(156, 148, 148);
+    background-image: url('bg4.jpg');
+    z-index: -1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: rgb(93, 91, 91,0.3);
+    color: rgb(156, 148, 148);
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 63vh;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 34px;
+    background-color: rgb(93, 91, 91,0.3);
+    /* background-image: url('bg4.jpg'); */
+}
+
+.bottom{
+    position: sticky;
+    height: 115px;
+    background-color: rgb(93, 91, 91,0.3);
+    color: rgb(156, 148, 148);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 14px;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+    /* text-align: center; */
+}
+
+.songItemContainer{
+    margin-top: 65px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(93, 91, 91,0.7);
+    width: 22vw;
+    margin: 12px 0;
+    border-radius: 30px;
+}
+
+.songItem > img{
+    width: 50px;
+    margin: 0 2px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timestamp img{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
